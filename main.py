@@ -33,3 +33,15 @@ if data_file is not None:
   fig, ax = plt.subplots()
   sns.heatmap(df.corr(method='pearson'), ax=ax, vmax=1, square=True, annot=True, cmap='Blues')
   st.write(fig)
+
+  output = st.radio('choose a dependent varaiable', df.columns)
+  
+  st.header('show relationship')
+  for col in list(df.columns):
+    if col != ouput:
+      fig, ax = plt.subplots()
+      ax.scatter(x=df[col], y=df[output])
+      ax.hist(df[col], bins=20)
+      plt.xlabel(col)
+      plt.ylabel(output)
+      st.pyplot(fig)
