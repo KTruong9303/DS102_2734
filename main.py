@@ -41,7 +41,6 @@ if data_file is not None:
     if col != output:
       fig, ax = plt.subplots()
       ax.scatter(x=df[col], y=df[output], color = 'red')
-      ax.hist(df[col], bins=20)
       plt.xlabel(col)
       plt.ylabel(output)
       st.pyplot(fig)
