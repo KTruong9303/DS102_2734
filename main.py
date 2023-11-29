@@ -23,7 +23,7 @@ if data_file is not None:
   st.header('visualize')
   for col in list(df.columns):
     fig, ax = plt.subplots()
-    ax.hist(df[col], bin=20)
+    ax.hist(df[col], bins=20)
     plt.xlabel(col)
     plt.ylabel('Quantity')
     st.pyplot(fig)
