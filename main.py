@@ -31,5 +31,5 @@ if data_file is not None:
 
   st.header('show colleration')
   fig, ax = plt.subplots()
-  sns.heatmap(df.corr(method='pearson'), ax=ax, vmax=1, square=True, annot=True, cmap='Reds')
+  sns.heatmap(df.corr(method='pearson'), ax=ax, vmax=1, square=True, annot=True, cmap='Blues')
   st.write(fig)
