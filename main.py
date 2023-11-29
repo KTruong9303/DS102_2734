@@ -18,4 +18,7 @@ if data_file is not None:
   buffer = io.StringIO()
   df.info(buf=buffer)
   st.text(buffer.getvalue())
-  
+
+  st.header('visualize')
+  for col in list(df.columns):
+    fig, ax = plt.subplots()
