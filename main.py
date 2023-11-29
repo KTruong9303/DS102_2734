@@ -40,7 +40,7 @@ if data_file is not None:
   for col in list(df.columns):
     if col != output:
       fig, ax = plt.subplots()
-      ax.scatter(x=df[col], y=df[output])
+      ax.scatter(x=df[col], y=df[output], color = 'red')
       ax.hist(df[col], bins=20)
       plt.xlabel(col)
       plt.ylabel(output)
