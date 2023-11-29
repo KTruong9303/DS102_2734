@@ -18,3 +18,4 @@ if data_file is not None:
   buffer = io.StringIO()
   df.info(buf=buffer)
   st.text(buffer.getvalue())
+  
