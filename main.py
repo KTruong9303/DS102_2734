@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import io
 
 st.title('hola!')
 
@@ -12,3 +13,8 @@ if data_file is not None:
   st.dataframe(df)
   st.header('statistic:')
   st.table(df.describe())
+
+  st.header('Show data information')
+  buffer = io.StringIO()
+  df.info(buf=buffer)
+  st.text(buffer.getvalue())
