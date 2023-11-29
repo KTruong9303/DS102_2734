@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import io
 import matplotlib.pyplot as plt
-import seaborns as sns
+import seaborn as sns
 
 st.title('hola!')
 
