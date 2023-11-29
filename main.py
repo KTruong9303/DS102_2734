@@ -38,7 +38,7 @@ if data_file is not None:
   
   st.header('show relationship')
   for col in list(df.columns):
-    if col != ouput:
+    if col != output:
       fig, ax = plt.subplots()
       ax.scatter(x=df[col], y=df[output])
       ax.hist(df[col], bins=20)
