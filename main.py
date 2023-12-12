@@ -10,7 +10,7 @@ image_url = "https://th.bing.com/th/id/R.57030b235523d9d82be10c25ab4217ec?rik=g1
 st.image(image_url, caption='Let\'s me analyze your data! 🧐',  width=200)
 
 st.header('Upload CSV file')
-data_file = st.file_uploader('choose file here: ', type=(['.csv']))
+data_file = st.file_uploader('choose file here: ', type=(['.csv','.xls']))
 
 
 if data_file is not None:
