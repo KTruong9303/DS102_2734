@@ -4,7 +4,12 @@ import io
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title('hola!')
+col1, col2 = st.beta_columns([1, 2])
+
+col1.image(image_url, caption='Let\'s me analyze your data! 🧐',  width=200)
+
+col2.header('hola!')
+
 image_url = "https://th.bing.com/th/id/R.57030b235523d9d82be10c25ab4217ec?rik=g1gI9Q8bZxPleQ&pid=ImgRaw&r=0"
 st.image(image_url, caption='Lets me analyze your data! 🧐',  width=200)
 
