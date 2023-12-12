@@ -4,19 +4,18 @@ import io
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-col1, col2 = st.beta_columns([1, 2])
 
-col1.image(image_url, caption='Let\'s me analyze your data! 🧐',  width=200)
-
-col2.header('hola!')
-
+st.title('hola!')
 image_url = "https://th.bing.com/th/id/R.57030b235523d9d82be10c25ab4217ec?rik=g1gI9Q8bZxPleQ&pid=ImgRaw&r=0"
-st.image(image_url, caption='Lets me analyze your data! 🧐',  width=200)
+st.image(image_url, caption='Let\'s me analyze your data! 🧐',  width=200)
 
 st.header('Upload CSV file')
 data_file = st.file_uploader('choose file here: ', type=(['.csv']))
 
+
 if data_file is not None:
+  image_url_success = "https://33.media.tumblr.com/0798d4865949730eb5ae2aeacbffbf16/tumblr_nd3pec9DuV1r65gi5o2_r1_250.gif"
+  st.image(image_url_success, caption='Successfulll! ✌',  width=150)
   df = pd.read_csv(data_file)
   st.header('show data')
   st.dataframe(df)
