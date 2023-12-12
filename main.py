@@ -7,7 +7,7 @@ import seaborn as sns
 st.title('hola!')
 
 image_url = "https://th.bing.com/th/id/R.57030b235523d9d82be10c25ab4217ec?rik=g1gI9Q8bZxPleQ&pid=ImgRaw&r=0"
-st.image(image_url, caption='Let\'s me analyze your data! 🧐', scale = 0.5)
+st.image(image_url, caption='Let\'s me analyze your data! 🧐', scale=0.5)
 
 st.header('up file')
 data_file = st.file_uploader('choose file here: ', type=(['.csv']))
