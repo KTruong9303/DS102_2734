@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.title('hola!')
-
+scale_factor = 0.5
 image_url = "https://th.bing.com/th/id/R.57030b235523d9d82be10c25ab4217ec?rik=g1gI9Q8bZxPleQ&pid=ImgRaw&r=0"
-st.image(image_url, caption='Let\'s me analyze your data! 🧐', scale=0.5)
+st.image(image_url, caption='Let\'s me analyze your data! 🧐', scale=scale_factor)
 
-st.header('up file')
+st.header('Upload CSV file')
 data_file = st.file_uploader('choose file here: ', type=(['.csv']))
 
 if data_file is not None:
